@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      nav {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+      }
+
+      nav .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #ff6347;
+      }
+
+      /* Hamburger menu */
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+        gap: 5px;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .hamburger {
+          display: block;
+        }
+
+        nav ul {
+          position: absolute;
+          top: 60px;
+          left: 0;
+          right: 0;
+          background-color: #333;
+          flex-direction: column;
+          align-items: center;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out;
+        }
+
+        input[type="checkbox"]:checked ~ ul {
+          max-height: 300px; /* adjust according to number of items */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">MyLogo</div>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label class="hamburger" for="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

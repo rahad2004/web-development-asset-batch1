@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: aqua;
+        width: 100%;
+      }
+
+      main {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .container > p {
+        text-align: justify;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+
+      .container p:nth-child(1) {
+        background-color: tomato;
+      }
+
+      .container p:nth-child(2) {
+        background-color: rgb(71, 255, 86);
+      }
+
+      .container p:nth-child(3) {
+        background-color: rgb(181, 71, 255);
+      }
+
+      .T,
+      .M {
+        display: none;
+      }
+
+      .container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media screen and (max-width: 1024px) {
+        .M,
+        .D {
+          display: none;
+        }
+
+        .T {
+          display: block;
+        }
+
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .D,
+        .T {
+          display: none;
+        }
+
+        .M {
+          display: block;
+        }
+
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="M">Mobail Device</h1>
+      <h1 class="T">Tablet Device</h1>
+      <h1 class="D">Desktop Device</h1>
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          ipsa voluptatum deserunt itaque saepe. Atque corrupti id temporibus.
+          Repellat eligendi eius, nihil et cum aliquam animi doloremque incidunt
+          dolore voluptate veniam rem aperiam nemo ex dolor fugit culpa dolores.
+          Adipisci quidem repellendus distinctio enim magnam hic voluptatem
+          necessitatibus aliquid harum quasi neque, iure veritatis cupiditate,
+          nisi tempora aspernatur. Deserunt magni, suscipit quisquam eius ad
+          libero nam officiis accusamus rem voluptatem incidunt ab vero.
+          Corrupti porro, aspernatur et animi quam nemo dolorum amet culpa
+          adipisci molestiae vitae quos? Nam, hic temporibus magnam eius ea quia
+          facilis accusantium et modi neque id.
+        </p>
+        <p>
+          Reiciendis quis corporis eos quae vel porro impedit! Maxime,
+          laboriosam. Voluptate nisi excepturi ea aut voluptates consectetur
+          nulla porro sequi quod, necessitatibus accusantium quibusdam sunt ut
+          consequuntur suscipit alias, culpa fuga similique distinctio vitae a
+          optio non nemo! Tempore consequuntur reiciendis corrupti quo sit.
+          Tempora aliquam consectetur non? Autem fugit laudantium nulla eum
+          officia, pariatur sequi dolore, ratione nam rem dolores quibusdam
+          placeat similique delectus vitae impedit a sit beatae reiciendis
+          consequuntur veritatis doloremque amet. Minus, autem unde, commodi
+          delectus assumenda aut deserunt incidunt ipsam dicta ullam aperiam
+          cumque eius aliquid sed. Dolorum, eligendi cumque totam et molestias
+          eos? Aliquid.
+        </p>
+        <p>
+          Assumenda obcaecati voluptas blanditiis corrupti placeat, architecto
+          dolorum enim maiores. Accusantium laudantium quae deleniti animi nisi
+          natus optio fuga sapiente ipsum sit. Eligendi inventore optio numquam
+          officiis. Eos tempore atque quae ratione, similique, iusto nam
+          voluptatum nihil rerum, esse dolores temporibus natus explicabo ut
+          error vel accusantium assumenda deleniti inventore odio officia quis
+          molestiae. Soluta magni corrupti reprehenderit aliquid architecto,
+          aspernatur quidem nostrum adipisci est inventore. Itaque cumque ex
+          magnam facilis, fugiat ducimus accusantium, vero porro quam assumenda
+          mollitia error reprehenderit nisi ad, voluptates asperiores autem quas
+          totam. Doloribus facere laborum ducimus est porro ullam? Ut, tempora?
+          Delectus, quidem accusantium!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

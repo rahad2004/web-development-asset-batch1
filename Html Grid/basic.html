@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Html</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./images/html.png" type="image/x-icon" />
+
+    <style>
+      h1 {
+        border: 2px dotted red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2 id="heading2">Lorem ipsum dolor sit amet.</h2>
+
+    <h3 class="commonHeading">Lorem ipsum dolor sit amet.</h3>
+    <h4 class="commonHeading">Lorem ipsum dolor sit amet.</h4>
+    <h5 class="commonHeading">Lorem ipsum dolor sit amet.</h5>
+    <h6 class="commonHeading">Lorem ipsum dolor sit amet.</h6>
+
+    <p class="pera">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, nobis!
+    </p>
+
+    <span
+      >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut,
+      nobis!</span
+    >
+
+    <img src="./images/big1.jpg" alt="image" width="400px" height="300px" />
+
+    <h2>An Unordered HTML List</h2>
+
+    <ul>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+      <li>juice</li>
+      <li>
+        <ul>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>An Ordered HTML List</h2>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <fieldset>
+      <legend>Employee Details</legend>
+      <form action="">
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" required /> <br />
+        <br />
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" required /> <br />
+        <br />
+        <label for="eID">Employee ID :</label>
+        <input type="number" id="eId" required /> <br />
+        <br />
+        <label for="Password">Password :</label>
+        <input type="password" id="Password" required /> <br />
+        <br />
+
+        <input type="radio" name="gender" />
+        <label for="">male</label>
+        <input type="radio" name="gender" />
+        <label for="">female</label>
+        <input type="radio" name="gender" />
+        <label for="">other</label> <br /><br />
+
+        <label for="select">Select : </label>
+        <select name="" id="select">
+          <option value="">option1</option>
+          <option value="">option2</option>
+          <option value="">option3</option>
+          <option value="">option4</option>
+          <option value="">option5</option>
+          <option value="">option6</option></select
+        ><br /><br />
+        <label for="">File:</label>
+        <input type="file" accept="/image" required />
+        <input type="submit" />
+      </form>
+    </fieldset>
+
+    <h2>A basic HTML table</h2>
+
+    <table border="1" style="border-collapse: collapse; width: 100%">
+      <caption>
+        Student Details Table
+      </caption>
+
+      <colgroup>
+        <col style="background-color: rgb(119, 128, 0)" />
+        <col style="background-color: skyblue" />
+        <col style="background-color: red" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Date Of Birth</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>X</td>
+          <td>Y</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td>Y</td>
+          <td>02</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td>Y</td>
+          <td>03</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td>Y</td>
+          <td>04</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p title="borders to the table">
+      To understand the example better, we have added borders to the table.
+    </p>
+
+    <div>
+      <!-- left -->
+      <div>
+        <img
+          src="https://htmldemo.net/raptas/raptas/img/banner/1.jpg"
+          alt=""
+          height="400px"
+          width="400px"
+        />
+      </div>
+      <div>
+        <h1>Hello! I’ am Raptas</h1>
+        <h2>Graphic Design And Web Development</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          inventore fugiat tempore reprehenderit rem eligendi, labore odit
+          maxime error officia earum qui corrupti repellat dolores fuga
+          quibusdam nemo deleniti praesentium sequi reiciendis aspernatur
+          voluptatum saepe voluptatibus dignissimos! Illo quidem quibusdam
+          temporibus hic deserunt eius, maiores nisi! Voluptatum ex repellendus
+          vero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+          adipisci optio itaque pariatur veritatis omnis impedit vel, doloribus
+          id facere?
+        </p>
+        <button>My Portfolio</button>
+      </div>
+
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/67sqj-FZUcc?si=oynKuu0LjSey9CNg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div style="margin-bottom: 500px">
+        <p><b>Lorem ipsum dolor sit amet.</b></p>
+        <p><strong>This text is important!</strong></p>
+      </div>
+    </div>
+  </body>
+</html>

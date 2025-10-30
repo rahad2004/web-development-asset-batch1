@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css" />
+
+    <style>
+      .container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px auto 100px;
+        grid-template-areas:
+          "m m h h h h h h h h h h"
+          "m m c c c c c c c c c c"
+          "m m f f f f f f f f f f";
+        gap: 15px;
+      }
+
+      .container .header {
+        grid-area: h;
+      }
+
+      .container .menu {
+        grid-area: m;
+      }
+
+      .container .content {
+        grid-area: c;
+      }
+
+      .container .footer {
+        grid-area: f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="menu">Menu</div>
+      <div class="content">Content</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

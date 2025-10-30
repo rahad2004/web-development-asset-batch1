@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout Fixed</title>
+
+    <style>
+      /* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(45deg, #190f2c, #200b30);
+        padding: 15px;
+        place-items: center;
+        min-height: 100vh;
+      }
+
+      /* Grid Wrapper */
+      .grid-wrapper {
+        height: 100vh;
+        width: 90vw;
+        border: 1px solid tomato;
+        display: grid;
+        gap: 20px;
+        grid-auto-rows: 250px;
+        justify-content: start;
+        align-content: end;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, 200px);
+      }
+
+      /* Default box style */
+      .grid-wrapper > div {
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      /* Unique colors using nth-child */
+      .grid-wrapper > div:nth-child(3n + 1) {
+        background-color: tomato;
+      }
+      .grid-wrapper > div:nth-child(3n + 2) {
+        background-color: yellowgreen;
+      }
+      .grid-wrapper > div:nth-child(3n + 3) {
+        background-color: royalblue;
+      }
+
+      /* Optional hover effect */
+      .grid-wrapper > div:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-wrapper">
+      <div>
+        <h1>1</h1>
+      </div>
+      <div><h1>2</h1></div>
+      <div><h1>3</h1></div>
+      <div><h1>4</h1></div>
+      <div><h1>5</h1></div>
+      <div><h1>6</h1></div>
+      <div><h1>7</h1></div>
+      <div><h1>8</h1></div>
+      <div><h1>9</h1></div>
+      <div><h1>10</h1></div>
+    </div>
+  </body>
+</html>
